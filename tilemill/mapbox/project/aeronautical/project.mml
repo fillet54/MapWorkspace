@@ -1,0 +1,150 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99978348919964,
+        -85.051,
+        180,
+        83.63381093402977
+      ],
+      "id": "countries",
+      "class": "",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/10m-admin-0-countries.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "countries"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -120.00208333333336,
+        -0.0026086793130409634,
+        -59.99962054945414,
+        45.002083333333346
+      ],
+      "id": "15-H-terrain",
+      "class": "terrain",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/15-H-3857.tif",
+        "band": "1"
+      },
+      "layer": null,
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "15-H-terrain"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.00208333333336,
+        -0.0026086793130536854,
+        -59.99962054945414,
+        45.002083333333346
+      ],
+      "id": "15-H-contours-600m",
+      "class": "contours",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/15-H-3857-contours-600.shp"
+      },
+      "layer": null,
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "15-H-contours-600m"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.00208333333336,
+        -0.0026086793130536854,
+        -59.999620549454136,
+        45.002083333333346
+      ],
+      "id": "15-H-contours-100m",
+      "class": "contours",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/15-H-3857-contours-100.shp",
+        "id": "15-H-contours-100m",
+        "project": "aeronautical",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "15-H-contours-100m"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -116.19627829543417,
+        31.257818424483812,
+        -108.74578806549835,
+        35.753689194209905
+      ],
+      "id": "faa-phoenix",
+      "class": "faa",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/Phoenix-cropped-3857.tif"
+      },
+      "layer": null,
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "faa-phoenix"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99998938710374,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "graticules",
+      "class": "",
+      "Datasource": {
+        "file": "/vagrant/tilemill/map_source/10m-graticules-1.shp",
+        "id": "graticules",
+        "project": "aeronautical",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "graticules"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Aeronautical",
+  "description": ""
+}

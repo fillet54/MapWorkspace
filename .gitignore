@@ -1,0 +1,5 @@
+.vagrant/
+tilemill/mapbox/app.db
+tilemill/mapbox/export/
+tilemill/mapbox/cache/
+tilemill/map_source/
